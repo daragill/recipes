@@ -1,24 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>One Pan Caramelized Onion Pasta</title>
+  <meta charset="utf-8" />
+  <title>Minimal Recipe</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://html-preview.github.io/?url=https://github.com/daragill/recipes/blob/main/Test.html"
+    },
+    "name": "Minimal Test Recipe",
+    "description": "Description of my minimal recipe",
+    "author": {
+      "@type": "Person",
+      "name": "Jane Doe"
+    },
+    "recipeIngredient": [
+      "1 cup flour",
+      "1 egg"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "Mix the flour and egg."
+      }
+    ]
+  }
+  </script>
 </head>
-<body itemscope itemtype="https://schema.org/Recipe">
-  <h1 itemprop="name">One Pan Caramelized Onion Pasta</h1>
-  <p itemprop="description">A delicious caramelized onion pasta casserole...</p>
-
-  <h2>Ingredients</h2>
-  <ul>
-    <li itemprop="recipeIngredient">5 small yellow onions</li>
-    <li itemprop="recipeIngredient">1 head garlic</li>
-    ...
-  </ul>
-
-  <h2>Instructions</h2>
-  <ol>
-    <li itemprop="recipeInstructions">Preheat the oven to 400°F...</li>
-    <li itemprop="recipeInstructions">Add onions, tomatoes, etc.</li>
-    ...
-  </ol>
+<body>
+  <h1>Minimal Test Recipe</h1>
+  <p>Just a test recipe page!</p>
 </body>
 </html>
