@@ -1,37 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Minimal Recipe</title>
+  <meta charset="UTF-8" />
+  <title>Chocolate Chip Cookies</title>
+
+  <!-- JSON-LD structured data for a recipe -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
     "@type": "Recipe",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://html-preview.github.io/?url=https://github.com/daragill/recipes/blob/main/Test.html"
+      "@id": "https://daragill.github.io/recipes/Test.html"
     },
-    "name": "Minimal Test Recipe",
-    "description": "Description of my minimal recipe",
+    "name": "Chocolate Chip Cookies",
+    "description": "Classic chocolate chip cookies: crispy edges, chewy center. Perfect with a glass of milk!",
+    "keywords": "chocolate, cookies, dessert, baking",
     "author": {
       "@type": "Person",
       "name": "Jane Doe"
     },
+    "image": [
+      "https://example.com/photos/choc_chip_1.jpg",
+      "https://example.com/photos/choc_chip_2.jpg"
+    ],
+    "recipeYield": "24 cookies",
+    "prepTime": "PT10M",
+    "cookTime": "PT15M",
+    "totalTime": "PT25M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "200 calories"
+    },
     "recipeIngredient": [
-      "1 cup flour",
-      "1 egg"
+      "1 cup (225 g) butter, softened",
+      "1 cup (200 g) white sugar",
+      "1 cup (220 g) brown sugar, packed",
+      "2 large eggs",
+      "2 tsp vanilla extract",
+      "3 cups (375 g) all-purpose flour",
+      "1 tsp baking soda",
+      "½ tsp salt",
+      "2 cups (350 g) semisweet chocolate chips"
     ],
     "recipeInstructions": [
       {
         "@type": "HowToStep",
-        "text": "Mix the flour and egg."
+        "text": "Preheat oven to 375°F (190°C)."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "In a large bowl, cream together the butter, white sugar, and brown sugar until smooth."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Beat in the eggs one at a time, then stir in the vanilla."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Combine the flour, baking soda, and salt; gradually stir into the creamed mixture."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Fold in the chocolate chips."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Drop by large spoonfuls onto ungreased cookie sheets."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Bake for about 10 to 15 minutes, or until edges are nicely browned."
       }
     ]
   }
   </script>
+
+  <style>
+    /* Just some basic styling — optional for the recipe itself */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Minimal Test Recipe</h1>
-  <p>Just a test recipe page!</p>
+
+  <h1>Chocolate Chip Cookies</h1>
+  <p><em>Classic chocolate chip cookies with crispy edges, chewy center.</em></p>
+
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 cup (225 g) butter, softened</li>
+      <li>1 cup (200 g) white sugar</li>
+      <li>1 cup (220 g) brown sugar, packed</li>
+      <li>2 large eggs</li>
+      <li>2 tsp vanilla extract</li>
+      <li>3 cups (375 g) all-purpose flour</li>
+      <li>1 tsp baking soda</li>
+      <li>½ tsp salt</li>
+      <li>2 cups (350 g) semisweet chocolate chips</li>
+    </ul>
+  </section>
+
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat oven to 375°F (190°C).</li>
+      <li>Cream together butter, white sugar, and brown sugar until smooth.</li>
+      <li>Beat in eggs one at a time, then stir in vanilla.</li>
+      <li>Combine flour, baking soda, and salt; gradually stir into creamed mixture.</li>
+      <li>Fold in chocolate chips.</li>
+      <li>Drop by large spoonfuls onto cookie sheets.</li>
+      <li>Bake for 10 to 15 minutes, or until edges are golden brown.</li>
+    </ol>
+  </section>
+
+  <p><strong>Yield:</strong> 24 cookies<br>
+     <strong>Prep Time:</strong> 10 minutes<br>
+     <strong>Cook Time:</strong> 15 minutes<br>
+     <strong>Total Time:</strong> 25 minutes</p>
+
 </body>
 </html>
